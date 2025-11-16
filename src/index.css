@@ -11,3 +11,32 @@
 .text-primary-main {
   color: #6bb5d4;
 }
+
+.font-primary {
+    font-family: Clash Display, Inter, Sans-Serif;
+}
+
+.font-secondary{
+    font-family: Inter, Sans-Serif;
+}
+
+.animate-float_x{
+   animation: xfloat 2.5s linear infinite;
+}
+
+.input, select, textarea {
+    display: block;
+    appearance: none;
+    border-radius: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 18 18 / var(--tw-bg-opacity, 1));
+    padding-left: .875rem;
+    padding-right: .875rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.custom-container {
+  padding-left: 200px;
+  padding-right: 200px;
+}
