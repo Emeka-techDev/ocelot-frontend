@@ -70,10 +70,10 @@ const Home: React.FC = () => {
             You dream, we build
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 mt-5">
+          <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 mt-5 mb-10">
             <div className="h-full lg:w-full lg:col-span-3">
               <img
-                className="rounded-2xl"
+                className="rounded-2xl h-full object-fill" 
                 src="https://ocelotgroup.org/_next/static/media/1537.a3a7716b.jpg"
                 alt=""
               />
