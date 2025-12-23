@@ -92,7 +92,7 @@ const Navbar = () => {
             className={`
                 flex lg:hidden fixed top-0 left-0  bg-black z-10 
                 overflow-hidden  flex-col px-10 pt-28
-                transition-all duration-1000
+                transition-all duration-1000 w-full
                 ${isNavOpen ? "h-screen" : "h-0 opacity-0"}
             `}
         >
