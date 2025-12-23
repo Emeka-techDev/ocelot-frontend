@@ -38,26 +38,28 @@ const Home: React.FC = () => {
 					your trusted technology partner committed to turning ambitious ideas
 					into market-ready innovations.
 				</p>
-				<button className="flex items-center justify-between text-[10px] w-35 py-0.5 px-3 font-semibold font-Montserrat rounded-lg btn-blue text-white transition-all duration-300 ease-in-out group mt-2 cursor-pointer">
-					<span>Get Started</span>
-					<span className="group-hover:translate-x-1 transition-transform duration-300 my-auto">
-					<svg
-						width="18"
-						height="18"
-						viewBox="0 0 18 18"
-						fill="none"
-						className="h-5 w-5"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-						d="M10.125 3.375L15.75 9M15.75 9L10.125 14.625M15.75 9H2.25"
-						stroke="currentColor"
-						strokeWidth="1.5"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						></path>
-					</svg>
-					</span>
+				<button className="flex items-center justify-center text-[10px] w-full md:w-50 py-4 px-2 font-semibold font-primary rounded-lg btn-blue text-white transition-all duration-300 ease-in-out group mt-2 cursor-pointer">
+					<div className="flex items-center gap-5">
+						<span className="font-bold font-primary text-[15px]">Get Started</span>
+						<span className="group-hover:translate-x-1 transition-transform duration-300 my-auto">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 18 18"
+							fill="none"
+							className="h-5 w-5"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+							d="M10.125 3.375L15.75 9M15.75 9L10.125 14.625M15.75 9H2.25"
+							stroke="currentColor"
+							strokeWidth="1.5"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							></path>
+						</svg>
+						</span>
+					</div>
 				</button>
 				</motion.div>
 			</div>
@@ -114,7 +116,7 @@ const Home: React.FC = () => {
 									">
 										<span>Read More</span>
 										<span className="p-2 rounded-[50%] bg-gray-300 ">
-											<svg
+											{/* <svg
 											width={18}
 											height={18}
 											viewBox={`0 0 18 18`}
@@ -129,6 +131,22 @@ const Home: React.FC = () => {
 												stroke-linecap="round"
 												stroke-linejoin="round"
 											></path>
+											</svg> */}
+											<svg
+												width="18"
+												height="18"
+												viewBox="0 0 18 18"
+												fill="none"
+												className="h-5 w-5"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+												d="M10.125 3.375L15.75 9M15.75 9L10.125 14.625M15.75 9H2.25"
+												stroke="currentColor"
+												strokeWidth="1.5"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												></path>
 											</svg>
 										</span>
 									</button>
@@ -150,20 +168,20 @@ const Home: React.FC = () => {
 										<span>Read More</span>
 										<span className="p-2 rounded-[50%] bg-gray-300 ">
 											<svg
-											width={18}
-											height={18}
-											viewBox={`0 0 18 18`}
-											fill={`none`}
-											className="h-3.5 w-3.5 rotate-180"
-											xmlns="http://www.w3.org/2000/svg"
+												width="18"
+												height="18"
+												viewBox="0 0 18 18"
+												fill="none"
+												className="h-5 w-5"
+												xmlns="http://www.w3.org/2000/svg"
 											>
-											<path
+												<path
 												d="M10.125 3.375L15.75 9M15.75 9L10.125 14.625M15.75 9H2.25"
 												stroke="currentColor"
-												stroke-width="1.5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											></path>
+												strokeWidth="1.5"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												></path>
 											</svg>
 										</span>
 									</button>

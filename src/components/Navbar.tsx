@@ -7,13 +7,13 @@ const Navbar = () => {
   return (
     <>
       {/* NAVBAR (always visible) */}
-      <div className="fixed flex items-center top-0 left-0 z-50 h-10 md:h-20 bg-black w-full">
+      <div className="fixed flex items-center top-0 left-0 z-50 h-15 md:h-20 bg-black w-full">
         <div className="flex items-center justify-between w-full custom-container">
             <Link to="/">
 				<img
 					src="https://ocelotgroup.org/_next/static/media/ocelot_logo.ca0992e6.png"
 					alt="logo"
-					className="h-7"
+					className="h-10"
 				/>
 			</Link>
 
@@ -39,8 +39,8 @@ const Navbar = () => {
 				) : (
 					<button onClick={() => setIsNavOpen(true)} className="mr-2">
 					<svg
-						width="32"
-						height="32"
+						width="50"
+						height="50"
 						viewBox="0 0 24 24"
 						fill="none"
 						className="text-white"
