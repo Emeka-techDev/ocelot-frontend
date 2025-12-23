@@ -4,21 +4,23 @@ import { motion } from 'motion/react';
 
 const Project = () => {
   return (
-    <div className='relative'>
-        <HeaderContainer 
-            title="Our Projects"
-            description="Explore our portfolio of innovative solutions and breakthrough technologies.
-                From fintech platforms to e-commerce applications,
-                discover how we transform bold ideas into market-ready innovations."			
-			modelPath="/models/Horse.glb"
-        />
+     <div className="relative ">        
+        <div className='relative'>
+			<HeaderContainer 
+				title="Our Projects"
+				description="Explore our portfolio of innovative solutions and breakthrough technologies.
+					From fintech platforms to e-commerce applications,
+					discover how we transform bold ideas into market-ready innovations."			
+				modelPath="/models/Horse.glb"
+			/>
+		</div>
 
-		<div className='absolute top-160 md:top-140'>
+		<div className=''>
 			{/* <ProjectSection /> */}
 
 
 				
-				<div className="relative mt-20 custom-container justify-center items-center">
+				<div className="relative mt-20 custom-container justify-center items-center pr-7 md:pr-0">
 					<div>
 						{/* ------------- BLOCK 1 ------------- */}
 						<div
@@ -97,7 +99,7 @@ const Project = () => {
 						<div
 							className="
 								shadow-sm shadow-blue-300 h-[480px] overflow-y-hidden
-								md:pl-16 mb-10 rounded-3xl  sticky w-full
+								md:pl-16 mb-10 rounded-3xl sticky w-full
 								bg-[#f7f7f7] z-2 top-[200px]
 							"
 						>
@@ -167,7 +169,7 @@ const Project = () => {
 						{/* ------------- BLOCK 3 ------------- */}
 						<div
 							className="
-							h-480px overflow-y-hidden px-9 640:px-14 mb-10 rounded-3xl 
+							h-[480px] overflow-y-hidden px-9 640:px-14 mb-10 rounded-3xl 
 							sticky w-full
 							bg-[linear-gradient(160.32deg,#fff5e6_40%,#f1ebf4_80%)] bg-[center_top]
 							top-[300px] z-4
@@ -238,7 +240,7 @@ const Project = () => {
 							h-[480px] overflow-y-hidden pl-9 md:pl-14 mb-10 rounded-3xl 
 							sticky w-full bg-[#438EF2]
 							bg-[url('https://ocelotgroup.org/assets/st-cover.png')] bg-position[center_top]
-							top-[350px] z-8
+							top-[230px] z-8
 							"
 						>
 							<div className="grid grid-cols-2 lg:flex justify-between gap-8 1024:gap-1 relative opacity-100 translate-y-[10px]">
@@ -309,7 +311,7 @@ const Project = () => {
 							className="
 							h-[480px] overflow-y-hidden pl-9 640:pl-14 mb-10 rounded-3xl  
 							sticky w-full bg-position-[center_top]
-							top-[500px] z-9
+							top-[300px] z-9
 							"
 							style={{backgroundColor : "rgb(3 12 73 / var(--tw-bg-opacity, 1)) !important"}}
 						>
@@ -370,7 +372,11 @@ const Project = () => {
 							</div>
 						</div>
 
+
 					</div>
+					
+					<div className="h-[400px] hidden md:block" /> {/* Spacer to allow for scrolling */}
+
 				</div>
 
 			</div>

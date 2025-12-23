@@ -28,7 +28,12 @@ export function ThreeJSBackground({
     });
     rendererRef.current = renderer;
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    const { width, height } = container.getBoundingClientRect();
+    renderer.setSize(width, height);
+    // renderer.domElement.style.pointerEvents = "none";
+   
+
+
     renderer.shadowMap.enabled = true;
     container.appendChild(renderer.domElement);
 
@@ -39,7 +44,7 @@ export function ThreeJSBackground({
 
     const camera = new THREE.PerspectiveCamera(
       40,
-      window.innerWidth / window.innerHeight,
+      width / height,
       1,
       100
     );
@@ -127,11 +132,13 @@ export function ThreeJSBackground({
 
     // Resize Handler
     const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      if (!container) return;
+
+      const { width, height } = container.getBoundingClientRect();
+      camera.aspect = width / height;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(width, height);
     };
-    window.addEventListener("resize", handleResize);
 
     // Animation Loop
     const clock = new THREE.Clock();
@@ -168,13 +175,11 @@ export function ThreeJSBackground({
   }, [modelPath]);
 
   return (
+   
     <div
       ref={containerRef}
-      className="absolute inset-0 w-full h-full"
-      style={{
-        zIndex: 0,
-        pointerEvents: "auto", // Explicitly enable pointer events on canvas container
-      }}
+      className="relative mr-auto ml-auto w-[250px] md:w-[850px]  lg:w-full max-w-[1300px] min-w-auto  h-[300px] md:h-[500px] " // control height here
+      style={{ zIndex: 0 }}
     />
   );
 }

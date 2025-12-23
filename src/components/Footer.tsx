@@ -2,12 +2,15 @@ import { motion } from 'motion/react';
 
 const Footer = () => {
   return (
-   <section className='flex justify-center items-center gap-3 bg-black text-white custom-container '>
+   <section className='flex justify-center items-center gap-3 bg-black text-white '>
+		{/* <div>
+
+		</div> */}
 		<motion.div 
 			initial={{ opacity: 0 , y: 50}}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.8, ease: "easeOut" }}	
-			className='flex justify-center items-center '>
+			className='flex justify-center items-center custom-container '>
 				<div>
 						<div className='grid lg:grid-cols-3 gap-5 mt-10 mb-20'>
 							<div className=''>
